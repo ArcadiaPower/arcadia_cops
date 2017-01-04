@@ -1,0 +1,71 @@
+# This is the default configuration file. Enabling and disabling is configured
+# in separate files. This file adds all other parameters apart from Enabled.
+
+# Common configuration.
+AllCops:
+  # Include common Ruby source files.
+  Include:
+    - '**/*.gemspec'
+    - '**/*.rake'
+    - '**/config.ru'
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/Guardfile'
+  Exclude:
+    - 'vendor/**/*'
+  # Default formatter will be used if no -f/--format option is given.
+  DefaultFormatter: progress
+  # Cop names are not displayed in offense messages by default. Change behavior
+  # by overriding DisplayCopNames, or by giving the -D/--display-cop-names
+  # option.
+  DisplayCopNames: true
+  # Style guide URLs are not displayed in offense messages by default. Change
+  # behavior by overriding DisplayStyleGuide, or by giving the
+  # -S/--display-style-guide option.
+  DisplayStyleGuide: true
+  # When specifying style guide URLs, any paths and/or fragments will be
+  # evaluated relative to the base URL.
+  StyleGuideBaseURL: https://github.com/bbatsov/ruby-style-guide
+  # Extra details are not displayed in offense messages by default. Change
+  # behavior by overriding ExtraDetails, or by giving the
+  # -E/--extra-details option.
+  ExtraDetails: true
+  # Additional cops that do not reference a style guide rule may be enabled by
+  # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
+  # the --only-guide-cops option.
+  StyleGuideCopsOnly: false
+  # All cops except the ones in disabled.yml are enabled by default. Change
+  # this behavior by overriding DisabledByDefault. When DisabledByDefault is
+  # true, all cops in the default configuration are disabled, and and only cops
+  # in user configuration are enabled. This makes cops opt-in instead of
+  # opt-out. Note that when DisabledByDefault is true, cops in user
+  # configuration will be enabled even if they don't set the Enabled parameter.
+  DisabledByDefault: true
+  # Enables the result cache if true. Can be overridden by the --cache command
+  # line option.
+  UseCache: true
+  # Threshold for how many files can be stored in the result cache before some
+  # of the files are automatically removed.
+  MaxFilesInCache: 20000
+  # The cache will be stored in "rubocop_cache" under this directory. The name
+  # "/tmp" is special and will be converted to the system temporary directory,
+  # which is "/tmp" on Unix-like systems, but could be something else on other
+  # systems.
+  CacheRootDirectory: /tmp
+  # The default cache root directory is /tmp, which on most systems is
+  # writable by any system user. This means that it is possible for a
+  # malicious user to anticipate the location of Rubocop's cache directory,
+  # and create a symlink in its place that could cause Rubocop to overwrite
+  # unintended files, or read malicious input. If you are certain that your
+  # cache location is secure from this kind of attack, and wish to use a
+  # symlinked cache location, set this value to "true".
+  AllowSymlinksInCacheRootDirectory: false
+  # What MRI version of the Ruby interpreter is the inspected code intended to
+  # run on? (If there is more than one, set this to the lowest version.)
+  # If a value is specified for TargetRubyVersion then it is used.
+  # Else if .ruby-version exists and it contains an MRI version it is used.
+  # Otherwise we fallback to the oldest officially supported Ruby version (2.1).
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true

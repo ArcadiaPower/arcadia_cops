@@ -1,0 +1,363 @@
+# Enabled cops
+
+######### STYLE #########
+
+Style/AccessModifierIndentation:
+  Description: Check indentation of private/protected visibility modifiers.
+  StyleGuide: '#indent-public-private-protected'
+
+Style/AlignArray:
+  Description: >-
+                 Align the elements of an array literal if they span more than
+                 one line.
+  StyleGuide: '#align-multiline-arrays'
+
+Style/AlignHash:
+  Description: >-
+                 Align the elements of a hash literal if they span more than
+                 one line.
+
+Style/BlockEndNewline:
+  Description: 'Put end statement of multiline block on its own line.'
+
+Style/ClassAndModuleCamelCase:
+  Description: 'Use CamelCase for classes and modules.'
+  StyleGuide: '#camelcase-classes'
+
+Style/ClassAndModuleChildren:
+  Description: 'Checks style of children classes and modules.'
+
+Style/ConstantName:
+  Description: 'Constants should use SCREAMING_SNAKE_CASE.'
+  StyleGuide: '#screaming-snake-case'
+
+Style/DoubleNegation:
+  Description: 'Checks for uses of double negation (!!).'
+  StyleGuide: '#no-bang-bang'
+
+Style/ElseAlignment:
+  Description: 'Align elses and elsifs correctly.'
+
+Style/EmptyElse:
+  Description: 'Avoid empty else-clauses.'
+
+Style/EmptyCaseCondition:
+  Description: 'Avoid empty condition in case statements.'
+
+Style/EmptyLineBetweenDefs:
+  Description: 'Use empty lines between defs.'
+  StyleGuide: '#empty-lines-between-methods'
+
+Style/FileName:
+  Description: 'Use snake_case for source file names.'
+  StyleGuide: '#snake-case-files'
+
+Style/FirstParameterIndentation:
+  Description: 'Checks the indentation of the first parameter in a method call.'
+
+Style/HashSyntax:
+  Description: >-
+                 Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax
+                 { :a => 1, :b => 2 }.
+  StyleGuide: '#hash-literals'
+
+Style/IndentHash:
+  Description: 'Checks the indentation of the first key in a hash literal.'
+
+Style/MethodCallParentheses:
+  Description: 'Do not use parentheses for method calls with no arguments.'
+  StyleGuide: '#method-invocation-parens'
+
+Style/RedundantParentheses:
+  Description: "Checks for parentheses that seem not to serve any purpose."
+
+Style/RedundantReturn:
+  Description: "Don't use return where it's not required."
+  StyleGuide: '#no-explicit-return'
+
+Style/SafeNavigation:
+  Description: >-
+                  This cop transforms usages of a method call safeguarded by
+                  a check for the existance of the object to
+                  safe navigation (`&.`).
+
+Style/SpaceBeforeFirstArg:
+  Description: >-
+                 Checks that exactly one space is used between a method name
+                 and the first argument for method calls without parentheses.
+
+Style/SpaceAfterColon:
+  Description: 'Use spaces after colons.'
+  StyleGuide: '#spaces-operators'
+
+Style/SpaceAfterComma:
+  Description: 'Use spaces after commas.'
+  StyleGuide: '#spaces-operators'
+
+Style/SpaceAfterMethodName:
+  Description: >-
+                 Do not put a space between a method name and the opening
+                 parenthesis in a method definition.
+  StyleGuide: '#parens-no-spaces'
+
+Style/Tab:
+  Description: 'No hard tabs.'
+  StyleGuide: '#spaces-indentation'
+
+Style/TrailingWhitespace:
+  Description: 'Avoid trailing whitespace.'
+  StyleGuide: '#no-trailing-whitespace'
+
+Style/TrailingBlankLines:
+  Description: 'Checks trailing blank lines and final newline.'
+  StyleGuide: '#newline-eof'
+
+Style/ZeroLengthPredicate:
+  Description: 'Use #empty? when testing for objects of length 0.'
+
+######### METRICS #########
+
+######### PERFORMANCE #########
+
+######### RAILS #########
+
+Rails/ActionFilter:
+  Description: 'Enforces consistent use of action filter methods.'
+
+Rails/EnumUniqueness:
+  Description: 'Avoid duplicate integers in hash-syntax `enum` declaration.'
+
+Rails/DynamicFindBy:
+  Description: 'Use `find_by` instead of dynamic `find_by_*`.'
+  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#find_by'
+
+Rails/Output:
+  Description: 'Checks for calls to puts, print, etc.'
+
+Rails/SafeNavigation:
+  Description: "Use Ruby's safe navigation operator (`&.`) instead of `try!`"
+
+######### Bundler #########
+
+Bundler/DuplicatedGem:
+  Description: 'Checks for duplicate gem entries in Gemfile.'
+  Include:
+    - '**/Gemfile'
+    - '**/gems.rb'
+
+######### LINT #########
+
+Lint/AmbiguousOperator:
+  Description: >-
+                 Checks for ambiguous operators in the first argument of a
+                 method invocation without parentheses.
+  StyleGuide: '#method-invocation-parens'
+
+Lint/AmbiguousRegexpLiteral:
+  Description: >-
+                 Checks for ambiguous regexp literals in the first argument of
+                 a method invocation without parentheses.
+
+Lint/AssignmentInCondition:
+  Description: "Don't use assignment in conditions."
+  StyleGuide: '#safe-assignment-in-condition'
+
+Lint/BlockAlignment:
+  Description: 'Align block ends correctly.'
+
+Lint/CircularArgumentReference:
+  Description: "Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument."
+
+Lint/ConditionPosition:
+  Description: >-
+                 Checks for condition placed in a confusing position relative to
+                 the keyword.
+  StyleGuide: '#same-line-condition'
+
+Lint/Debugger:
+  Description: 'Check for debugger calls.'
+
+Lint/DefEndAlignment:
+  Description: 'Align ends corresponding to defs correctly.'
+
+Lint/DeprecatedClassMethods:
+  Description: 'Check for deprecated class method calls.'
+
+Lint/DuplicateCaseCondition:
+  Description: 'Do not repeat values in case conditionals.'
+
+Lint/DuplicateMethods:
+  Description: 'Check for duplicate method definitions.'
+
+Lint/DuplicatedKey:
+  Description: 'Check for duplicate keys in hash literals.'
+
+Lint/EachWithObjectArgument:
+  Description: 'Check for immutable argument given to each_with_object.'
+
+Lint/ElseLayout:
+  Description: 'Check for odd code arrangement in an else block.'
+
+Lint/EmptyEnsure:
+  Description: 'Checks for empty ensure block.'
+
+Lint/EmptyExpression:
+  Description: 'Checks for empty expressions.'
+
+Lint/EmptyInterpolation:
+  Description: 'Checks for empty string interpolation.'
+
+Lint/EmptyWhen:
+  Description: 'Checks for `when` branches with empty bodies.'
+
+Lint/EndAlignment:
+  Description: 'Align ends correctly.'
+
+Lint/EndInMethod:
+  Description: 'END blocks should not be placed inside method definitions.'
+
+Lint/EnsureReturn:
+  Description: 'Do not use return in an ensure block.'
+  StyleGuide: '#no-return-ensure'
+
+Lint/FloatOutOfRange:
+  Description: >-
+                 Catches floating-point literals too large or small for Ruby to
+                 represent.
+
+Lint/FormatParameterMismatch:
+  Description: 'The number of parameters to format/sprint must match the fields.'
+
+Lint/HandleExceptions:
+  Description: "Don't suppress exception."
+  StyleGuide: '#dont-hide-exceptions'
+
+Lint/ImplicitStringConcatenation:
+  Description: >-
+                 Checks for adjacent string literals on the same line, which
+                 could better be represented as a single string literal.
+
+Lint/IneffectiveAccessModifier:
+  Description: >-
+                 Checks for attempts to use `private` or `protected` to set
+                 the visibility of a class method, which does not work.
+
+Lint/InheritException:
+  Description: 'Avoid inheriting from the `Exception` class.'
+
+Lint/InvalidCharacterLiteral:
+  Description: >-
+                 Checks for invalid character literals with a non-escaped
+                 whitespace character.
+
+Lint/LiteralInCondition:
+  Description: 'Checks of literals used in conditions.'
+
+Lint/LiteralInInterpolation:
+  Description: 'Checks for literals used in interpolation.'
+
+Lint/Loop:
+  Description: >-
+                 Use Kernel#loop with break rather than begin/end/until or
+                 begin/end/while for post-loop tests.
+  StyleGuide: '#loop-with-break'
+
+Lint/NestedMethodDefinition:
+  Description: 'Do not use nested method definitions.'
+  StyleGuide: '#no-nested-methods'
+
+Lint/NextWithoutAccumulator:
+  Description:  >-
+                  Do not omit the accumulator when calling `next`
+                  in a `reduce`/`inject` block.
+
+Lint/NonLocalExitFromIterator:
+  Description: 'Do not use return in iterator to cause non-local exit.'
+
+Lint/ParenthesesAsGroupedExpression:
+  Description: >-
+                 Checks for method calls with a space before the opening
+                 parenthesis.
+  StyleGuide: '#parens-no-spaces'
+
+Lint/PercentStringArray:
+  Description: >-
+                 Checks for unwanted commas and quotes in %w/%W literals.
+
+Lint/PercentSymbolArray:
+  Description: >-
+                 Checks for unwanted commas and colons in %i/%I literals.
+
+Lint/RandOne:
+  Description: >-
+                 Checks for `rand(1)` calls. Such calls always return `0`
+                 and most likely a mistake.
+
+Lint/RequireParentheses:
+  Description: >-
+                 Use parentheses in the method call to avoid confusion
+                 about precedence.
+
+Lint/RescueException:
+  Description: 'Avoid rescuing the Exception class.'
+  StyleGuide: '#no-blind-rescues'
+
+Lint/ShadowedException:
+  Description: >-
+                  Avoid rescuing a higher level exception
+                  before a lower level exception.
+
+Lint/ShadowingOuterLocalVariable:
+  Description: >-
+                 Do not use the same name as outer local variable
+                 for block arguments or block local variables.
+
+Lint/StringConversionInInterpolation:
+  Description: 'Checks for Object#to_s usage in string interpolation.'
+  StyleGuide: '#no-to-s'
+
+Lint/UnderscorePrefixedVariableName:
+  Description: 'Do not use prefix `_` for a variable that is used.'
+
+Lint/UnifiedInteger:
+  Description: 'Use Integer instead of Fixnum or Bignum'
+
+Lint/UnneededDisable:
+  Description: >-
+                 Checks for rubocop:disable comments that can be removed.
+                 Note: this cop is not disabled when disabling all cops.
+                 It must be explicitly disabled.
+
+Lint/UnneededSplatExpansion:
+  Description: 'Checks for splat unnecessarily being called on literals'
+
+Lint/UnusedBlockArgument:
+  Description: 'Checks for unused block arguments.'
+  StyleGuide: '#underscore-unused-vars'
+
+Lint/UnusedMethodArgument:
+  Description: 'Checks for unused method arguments.'
+  StyleGuide: '#underscore-unused-vars'
+
+Lint/UnreachableCode:
+  Description: 'Unreachable code.'
+
+Lint/UselessAccessModifier:
+  Description: 'Checks for useless access modifiers.'
+  ContextCreatingMethods: []
+
+Lint/UselessAssignment:
+  Description: 'Checks for useless assignment to a local variable.'
+  StyleGuide: '#underscore-unused-vars'
+
+Lint/UselessComparison:
+  Description: 'Checks for comparison of something with itself.'
+
+Lint/UselessElseWithoutRescue:
+  Description: 'Checks for useless `else` in `begin..end` without `rescue`.'
+
+Lint/UselessSetterCall:
+  Description: 'Checks for useless setter call to a local variable.'
+
+Lint/Void:
+  Description: 'Possible use of operator/literal/variable in void context.'
