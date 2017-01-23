@@ -115,6 +115,9 @@ Style/TrailingBlankLines:
 Style/ZeroLengthPredicate:
   Description: 'Use #empty? when testing for objects of length 0.'
 
+Style/EmptyLines:
+  Description: "Don't use several empty lines in a row."
+
 ######### METRICS #########
 
 ######### PERFORMANCE #########
