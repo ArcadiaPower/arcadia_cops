@@ -48,6 +48,9 @@ Style/EmptyLineBetweenDefs:
   Description: 'Use empty lines between defs.'
   StyleGuide: '#empty-lines-between-methods'
 
+Style/EmptyLinesAroundClassBody:
+  Description: "Keeps track of empty lines around class bodies."
+
 Style/FileName:
   Description: 'Use snake_case for source file names.'
   StyleGuide: '#snake-case-files'

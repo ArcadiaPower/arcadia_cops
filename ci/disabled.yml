@@ -139,9 +139,6 @@ Style/EmptyLinesAroundAccessModifier:
 Style/EmptyLinesAroundBlockBody:
   Description: "Keeps track of empty lines around block bodies."
 
-Style/EmptyLinesAroundClassBody:
-  Description: "Keeps track of empty lines around class bodies."
-
 Style/EmptyLinesAroundModuleBody:
   Description: "Keeps track of empty lines around module bodies."
 
