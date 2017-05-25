@@ -2,22 +2,22 @@
 
 ######### STYLE #########
 
-Style/AccessModifierIndentation:
+Layout/AccessModifierIndentation:
   Description: Check indentation of private/protected visibility modifiers.
   StyleGuide: '#indent-public-private-protected'
 
-Style/AlignArray:
+Layout/AlignArray:
   Description: >-
                  Align the elements of an array literal if they span more than
                  one line.
   StyleGuide: '#align-multiline-arrays'
 
-Style/AlignHash:
+Layout/AlignHash:
   Description: >-
                  Align the elements of a hash literal if they span more than
                  one line.
 
-Style/BlockEndNewline:
+Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
 
 Style/ClassAndModuleCamelCase:
@@ -35,7 +35,7 @@ Style/DoubleNegation:
   Description: 'Checks for uses of double negation (!!).'
   StyleGuide: '#no-bang-bang'
 
-Style/ElseAlignment:
+Layout/ElseAlignment:
   Description: 'Align elses and elsifs correctly.'
 
 Style/EmptyElse:
@@ -44,7 +44,7 @@ Style/EmptyElse:
 Style/EmptyCaseCondition:
   Description: 'Avoid empty condition in case statements.'
 
-Style/EmptyLineBetweenDefs:
+Layout/EmptyLineBetweenDefs:
   Description: 'Use empty lines between defs.'
   StyleGuide: '#empty-lines-between-methods'
 
@@ -52,7 +52,7 @@ Style/FileName:
   Description: 'Use snake_case for source file names.'
   StyleGuide: '#snake-case-files'
 
-Style/FirstParameterIndentation:
+Layout/FirstParameterIndentation:
   Description: 'Checks the indentation of the first parameter in a method call.'
 
 Style/HashSyntax:
@@ -61,7 +61,7 @@ Style/HashSyntax:
                  { :a => 1, :b => 2 }.
   StyleGuide: '#hash-literals'
 
-Style/IndentHash:
+Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
 
 Style/MethodCallParentheses:
@@ -81,34 +81,34 @@ Style/SafeNavigation:
                   a check for the existance of the object to
                   safe navigation (`&.`).
 
-Style/SpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Description: >-
                  Checks that exactly one space is used between a method name
                  and the first argument for method calls without parentheses.
 
-Style/SpaceAfterColon:
+Layout/SpaceAfterColon:
   Description: 'Use spaces after colons.'
   StyleGuide: '#spaces-operators'
 
-Style/SpaceAfterComma:
+Layout/SpaceAfterComma:
   Description: 'Use spaces after commas.'
   StyleGuide: '#spaces-operators'
 
-Style/SpaceAfterMethodName:
+Layout/SpaceAfterMethodName:
   Description: >-
                  Do not put a space between a method name and the opening
                  parenthesis in a method definition.
   StyleGuide: '#parens-no-spaces'
 
-Style/Tab:
+Layout/Tab:
   Description: 'No hard tabs.'
   StyleGuide: '#spaces-indentation'
 
-Style/TrailingWhitespace:
+Layout/TrailingWhitespace:
   Description: 'Avoid trailing whitespace.'
   StyleGuide: '#no-trailing-whitespace'
 
-Style/TrailingBlankLines:
+Layout/TrailingBlankLines:
   Description: 'Checks trailing blank lines and final newline.'
   StyleGuide: '#newline-eof'
 
