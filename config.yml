@@ -51,7 +51,7 @@ AllCops:
   # "/tmp" is special and will be converted to the system temporary directory,
   # which is "/tmp" on Unix-like systems, but could be something else on other
   # systems.
-  CacheRootDirectory: /tmp
+  CacheRootDirectory: ~
   # The default cache root directory is /tmp, which on most systems is
   # writable by any system user. This means that it is possible for a
   # malicious user to anticipate the location of Rubocop's cache directory,
