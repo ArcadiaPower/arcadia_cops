@@ -64,7 +64,7 @@ Style/HashSyntax:
 Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
 
-Style/MethodCallParentheses:
+Style/MethodCallWithoutArgsParentheses:
   Description: 'Do not use parentheses for method calls with no arguments.'
   StyleGuide: '#method-invocation-parens'
 
