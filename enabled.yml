@@ -100,6 +100,10 @@ Layout/SpaceAfterMethodName:
                  parenthesis in a method definition.
   StyleGuide: '#parens-no-spaces'
 
+Layout/SpaceInsideParens:
+  Description: 'No spaces after ( or before ).'
+  StyleGuide: '#no-spaces-braces'
+
 Layout/Tab:
   Description: 'No hard tabs.'
   StyleGuide: '#spaces-indentation'
