@@ -860,18 +860,6 @@ Rails/Exit:
                   application or library code outside of Rake files to avoid
                   exits during unit testing or running in production.
 
-Rails/FindBy:
-  Description: 'Prefer find_by over where.first.'
-  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#find_by'
-
-Rails/FindEach:
-  Description: 'Prefer all.find_each over all.find.'
-  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#find-each'
-
-Rails/HasAndBelongsToMany:
-  Description: 'Prefer has_many :through to has_and_belongs_to_many.'
-  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#has-many-through'
-
 Rails/HttpPositionalArguments:
   Description: 'Use keyword arguments instead of positional arguments in http method calls.'
   Include:
@@ -883,9 +871,6 @@ Rails/NotNullColumn:
 
 Rails/OutputSafety:
   Description: 'The use of `html_safe` or `raw` may be a security risk.'
-
-Rails/PluralizationGrammar:
-  Description: 'Checks for incorrect grammar when using methods like `3.day.ago`.'
 
 Rails/ReadWriteAttribute:
   Description: >-
@@ -899,21 +884,6 @@ Rails/RequestReferer:
 Rails/ScopeArgs:
   Description: 'Checks the arguments of ActiveRecord scopes.'
 
-Rails/UniqBeforePluck:
-  Description: 'Prefer the use of uniq or distinct before pluck.'
-
-Rails/Validation:
-  Description: 'Use validates :attribute, hash of validations.'
-
-Security/JSONLoad:
-  Description: >-
-                 Prefer usage of `JSON.parse` over `JSON.load` due to potential
-                 security issues. See reference for more information.
-  Reference: 'http://ruby-doc.org/stdlib-2.3.0/libdoc/json/rdoc/JSON.html#method-i-load'
-  # Autocorrect here will change to a method that may cause crashes depending
-  # on the value of the argument.
-  AutoCorrect: false
-
 ##################### Bundler #############################
 
 Bundler/OrderedGems:
@@ -923,10 +893,6 @@ Bundler/OrderedGems:
   Include:
     - '**/Gemfile'
     - '**/gems.rb'
-
-Rails/SaveBang:
-  Description: 'Identifies possible cases where Active Record save! or related should be used.'
-  StyleGuide: 'https://github.com/bbatsov/rails-style-guide#save-bang'
 
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
