@@ -92,12 +92,6 @@ Style/CommandLiteral:
   Description: 'Use `` or %x around command literals.'
   StyleGuide: '#percent-x'
 
-Style/CommentAnnotation:
-  Description: >-
-                 Checks formatting of special comments
-                 (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
-  StyleGuide: '#annotate-keywords'
-
 Layout/CommentIndentation:
   Description: 'Indentation of comments.'
 
@@ -129,19 +123,6 @@ Style/EachForSimpleLoop:
 Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
 
-
-Layout/EmptyLines:
-  Description: "Don't use several empty lines in a row."
-
-Layout/EmptyLinesAroundBlockBody:
-  Description: "Keeps track of empty lines around block bodies."
-
-Layout/EmptyLinesAroundClassBody:
-  Description: "Keeps track of empty lines around class bodies."
-
-Layout/EmptyLinesAroundModuleBody:
-  Description: "Keeps track of empty lines around module bodies."
-
 Layout/EmptyLinesAroundMethodBody:
   Description: "Keeps track of empty lines around method bodies."
 
@@ -149,24 +130,13 @@ Style/EmptyLiteral:
   Description: 'Prefer literals to Array.new/Hash.new/String.new.'
   StyleGuide: '#literal-array-hash'
 
-Style/EmptyMethod:
-  Description: 'Checks the formatting of empty method definitions.'
-  StyleGuide: '#no-single-line-methods'
-
 Style/EndBlock:
   Description: 'Avoid the use of END blocks.'
   StyleGuide: '#no-END-blocks'
 
-Layout/EndOfLine:
-  Description: 'Use Unix-style line endings.'
-  StyleGuide: '#crlf'
-
 Style/EvenOdd:
   Description: 'Favor the use of Integer#even? && Integer#odd?'
   StyleGuide: '#predicate-methods'
-
-Layout/ExtraSpacing:
-  Description: 'Do not use unnecessary spacing.'
 
 Style/FrozenStringLiteralComment:
   Description: >-
@@ -217,10 +187,6 @@ Style/IfWithSemicolon:
 
 Layout/IndentationConsistency:
   Description: 'Keep indentation straight.'
-
-Layout/IndentationWidth:
-  Description: 'Use 2 spaces for indentation.'
-  StyleGuide: '#spaces-indentation'
 
 Style/IdenticalConditionalBranches:
   Description: >-
@@ -596,14 +562,6 @@ Style/SymbolProc:
 Style/TernaryParentheses:
   Description: 'Checks for use of parentheses around ternary conditions.'
 
-Style/TrailingCommaInArguments:
-  Description: 'Checks for trailing comma in argument lists.'
-  StyleGuide: '#no-trailing-params-comma'
-
-Style/TrailingCommaInLiteral:
-  Description: 'Checks for trailing comma in array and hash literals.'
-  StyleGuide: '#no-trailing-array-commas'
-
 Style/TrivialAccessors:
   Description: 'Prefer attr_* methods to trivial readers/writers.'
   StyleGuide: '#attr_family'
@@ -813,12 +771,6 @@ Performance/Sample:
                   `shuffle.last`, and `shuffle[Integer]`.
   Reference: 'https://github.com/JuanitoFatas/fast-ruby#arrayshufflefirst-vs-arraysample-code'
 
-Performance/Size:
-  Description: >-
-                  Use `size` instead of `count` for counting
-                  the number of elements in `Array` and `Hash`.
-  Reference: 'https://github.com/JuanitoFatas/fast-ruby#arraycount-vs-arraysize-code'
-
 Performance/CompareWithBlock:
   Description: 'Use `sort_by(&:foo)` instead of `sort_by { |a, b| a.foo <=> b.foo }`.'
 
@@ -900,10 +852,6 @@ Style/DocumentationMethod:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-
-Style/Encoding:
-  Description: 'Use UTF-8 as the source file encoding.'
-  StyleGuide: '#utf-8'
 
 Layout/FirstArrayElementLineBreak:
   Description: >-

@@ -20,6 +20,12 @@ Layout/AlignHash:
 Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
 
+Style/CommentAnnotation:
+  Description: >-
+                 Checks formatting of special comments
+                 (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
+  StyleGuide: '#annotate-keywords'
+
 Style/ClassAndModuleCamelCase:
   Description: 'Use CamelCase for classes and modules.'
   StyleGuide: '#camelcase-classes'
@@ -30,6 +36,25 @@ Style/ClassAndModuleChildren:
 Style/ConstantName:
   Description: 'Constants should use SCREAMING_SNAKE_CASE.'
   StyleGuide: '#screaming-snake-case'
+
+Layout/EndOfLine:
+  Description: 'Use Unix-style line endings.'
+  StyleGuide: '#crlf'
+
+Layout/ExtraSpacing:
+  Description: 'Do not use unnecessary spacing.'
+
+Layout/IndentationWidth:
+  Description: 'Use 2 spaces for indentation.'
+  StyleGuide: '#spaces-indentation'
+
+Style/TrailingCommaInArguments:
+  Description: 'Checks for trailing comma in argument lists.'
+  StyleGuide: '#no-trailing-params-comma'
+
+Style/TrailingCommaInLiteral:
+  Description: 'Checks for trailing comma in array and hash literals.'
+  StyleGuide: '#no-trailing-array-commas'
 
 Style/DoubleNegation:
   Description: 'Checks for uses of double negation (!!).'
@@ -50,6 +75,29 @@ Layout/EmptyLineBetweenDefs:
 
 Layout/EmptyLinesAroundAccessModifier:
   Description: "Keep blank lines around access modifiers."
+
+Layout/EmptyLines:
+  Description: "Don't use several empty lines in a row."
+
+Layout/EmptyLinesAroundBlockBody:
+  Description: "Keeps track of empty lines around block bodies."
+
+Layout/EmptyLinesAroundClassBody:
+  Description: "Keeps track of empty lines around class bodies."
+
+Layout/EmptyLinesAroundModuleBody:
+  Description: "Keeps track of empty lines around module bodies."
+
+Layout/EmptyLinesAroundMethodBody:
+  Description: "Keeps track of empty lines around method bodies."
+
+Style/EmptyLiteral:
+  Description: 'Prefer literals to Array.new/Hash.new/String.new.'
+  StyleGuide: '#literal-array-hash'
+
+Style/EmptyMethod:
+  Description: 'Checks the formatting of empty method definitions.'
+  StyleGuide: '#no-single-line-methods'
 
 Style/FileName:
   Description: 'Use snake_case for source file names.'
@@ -128,9 +176,19 @@ Layout/TrailingBlankLines:
 Style/ZeroLengthPredicate:
   Description: 'Use #empty? when testing for objects of length 0.'
 
+Style/Encoding:
+  Description: 'Use UTF-8 as the source file encoding.'
+  StyleGuide: '#utf-8'
+
 ######### METRICS #########
 
 ######### PERFORMANCE #########
+
+Performance/Size:
+  Description: >-
+                  Use `size` instead of `count` for counting
+                  the number of elements in `Array` and `Hash`.
+  Reference: 'https://github.com/JuanitoFatas/fast-ruby#arraycount-vs-arraysize-code'
 
 ######### RAILS #########
 
