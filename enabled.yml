@@ -48,6 +48,9 @@ Layout/EmptyLineBetweenDefs:
   Description: 'Use empty lines between defs.'
   StyleGuide: '#empty-lines-between-methods'
 
+Layout/EmptyLinesAroundAccessModifier:
+  Description: "Keep blank lines around access modifiers."
+
 Style/FileName:
   Description: 'Use snake_case for source file names.'
   StyleGuide: '#snake-case-files'
@@ -90,6 +93,9 @@ Layout/SpaceAfterColon:
   Description: 'Use spaces after colons.'
   StyleGuide: '#spaces-operators'
 
+Layout/SpaceBeforeComma:
+  Description: 'No spaces before commas.'
+
 Layout/SpaceAfterComma:
   Description: 'Use spaces after commas.'
   StyleGuide: '#spaces-operators'
@@ -103,6 +109,9 @@ Layout/SpaceAfterMethodName:
 Layout/SpaceInsideParens:
   Description: 'No spaces after ( or before ).'
   StyleGuide: '#no-spaces-braces'
+
+Layout/SpaceBeforeSemicolon:
+  Description: 'No spaces before semicolons.'
 
 Layout/Tab:
   Description: 'No hard tabs.'
