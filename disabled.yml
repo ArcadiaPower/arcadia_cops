@@ -133,9 +133,6 @@ Style/EachWithObject:
 Layout/EmptyLines:
   Description: "Don't use several empty lines in a row."
 
-Layout/EmptyLinesAroundAccessModifier:
-  Description: "Keep blank lines around access modifiers."
-
 Layout/EmptyLinesAroundBlockBody:
   Description: "Keeps track of empty lines around block bodies."
 
@@ -519,16 +516,10 @@ Layout/SpaceBeforeBlockBraces:
                  Checks that the left block brace has or doesn't have space
                  before it.
 
-Layout/SpaceBeforeComma:
-  Description: 'No spaces before commas.'
-
 Layout/SpaceBeforeComment:
   Description: >-
                  Checks for missing space between code and a comment on the
                  same line.
-
-Layout/SpaceBeforeSemicolon:
-  Description: 'No spaces before semicolons.'
 
 Layout/SpaceInsideBlockBraces:
   Description: >-
