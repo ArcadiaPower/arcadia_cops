@@ -1,0 +1,14 @@
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Ignore bundler config.
+/.bundle
+
+/pkg/
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+*.gem

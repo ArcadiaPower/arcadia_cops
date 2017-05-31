@@ -1,10 +1,27 @@
 Arcadia Power Rubocop Configuration
 ===================================
+ The arcadia_cops gem contains enabled and customized [rubocop](https://github.com/bbatsov/rubocop) cops to check and enforce our style guide.
 
-## Dev
+## Install
 
-All cops used configured specifically for our style guides, intended for use against new feature branches. Initially will have many "offenses" on the codebase overall.
+```ruby
+# Add to your gemfile
+gem 'arcadia_cops'
+```
 
-## CI
+Then setup your `.rubocop.yml` file per [rubocop docs](http://rubocop.readthedocs.io/en/latest/configuration/#inheriting-configuration-from-a-dependency-gem).
 
-Limited number of passing rules used integrated into codeship CI to fail a build. Goal of migrating additional cops from the larger dev list into the CI list.
+
+## Development
+
+Add a new cop to the `enabled.yml`, bump the version, and put in a PR for review.
+
+To see all cops including those that aren't enabled run `bundle exex rubocop --show-cops`.
+
+## Release
+
+Ensure you have bumped the version and run `rake release` to release to rubygems.org.
+
+## Other
+
+`arcadia_cops` also maintains the rubocop version to maintain parity across repos.
