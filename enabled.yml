@@ -24,6 +24,16 @@ Style/DefWithParentheses:
   Description: 'Use def with parentheses when there are arguments.'
   StyleGuide: '#method-parens'
 
+# Supports --auto-correct
+Style/MethodDefParentheses:
+  Description: Checks if the method definitions have or don't have parentheses.
+  StyleGuide: "#method-parens"
+  EnforcedStyle: require_parentheses
+  SupportedStyles:
+  - require_parentheses
+  - require_no_parentheses
+  - require_no_parentheses_except_multiline
+
 Style/CommentAnnotation:
   Description: >-
                  Checks formatting of special comments

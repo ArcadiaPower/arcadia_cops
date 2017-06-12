@@ -224,12 +224,6 @@ Style/LineEndConcatenation:
                  Use \ instead of + or << to concatenate two string literals at
                  line end.
 
-Style/MethodDefParentheses:
-  Description: >-
-                 Checks if the method definitions have or don't have
-                 parentheses.
-  StyleGuide: '#method-parens'
-
 Style/MethodName:
   Description: 'Use the configured style when naming methods.'
   StyleGuide: '#snake-case-symbols-methods-vars'
