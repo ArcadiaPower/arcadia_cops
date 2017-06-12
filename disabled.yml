@@ -48,13 +48,6 @@ Style/BlockComments:
   Description: 'Do not use block comments.'
   StyleGuide: '#no-block-comments'
 
-Style/BlockDelimiters:
-  Description: >-
-                Avoid using {...} for multi-line blocks (multiline chaining is
-                always ugly).
-                Prefer {...} over do...end for single-line blocks.
-  StyleGuide: '#single-line-blocks'
-
 Style/BracesAroundHashParameters:
   Description: 'Enforce braces style around hash parameters.'
 
@@ -80,9 +73,6 @@ Style/ClassMethods:
 Style/ClassVars:
   Description: 'Avoid the use of class variables.'
   StyleGuide: '#no-class-vars'
-
-Layout/ClosingParenthesisIndentation:
-  Description: 'Checks the indentation of hanging closing parentheses.'
 
 Style/ColonMethodCall:
   Description: 'Do not use :: for method call.'
@@ -266,22 +256,10 @@ Style/MultilineIfModifier:
 Style/MultilineMemoization:
   Description: 'Wrap multiline memoizations in a `begin` and `end` block.'
 
-Layout/MultilineMethodCallBraceLayout:
-  Description: >-
-                 Checks that the closing brace in a method call is
-                 either on the same line as the last method argument, or
-                 a new line.
-
 Layout/MultilineMethodCallIndentation:
   Description: >-
                  Checks indentation of method calls with the dot operator
                  that span more than one line.
-
-Layout/MultilineMethodDefinitionBraceLayout:
-  Description: >-
-                 Checks that the closing brace in a method definition is
-                 either on the same line as the last method parameter, or
-                 a new line.
 
 Layout/MultilineOperationIndentation:
   Description: >-
@@ -852,11 +830,6 @@ Layout/FirstHashElementLineBreak:
   Description: >-
                  Checks for a line break before the first element in a
                  multi-line hash.
-
-Layout/FirstMethodArgumentLineBreak:
-  Description: >-
-                 Checks for a line break before the first argument in a
-                 multi-line method call.
 
 Layout/FirstMethodParameterLineBreak:
   Description: >-

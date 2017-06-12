@@ -24,7 +24,6 @@ Style/DefWithParentheses:
   Description: 'Use def with parentheses when there are arguments.'
   StyleGuide: '#method-parens'
 
-# Supports --auto-correct
 Style/MethodDefParentheses:
   Description: Checks if the method definitions have or don't have parentheses.
   StyleGuide: "#method-parens"
@@ -33,6 +32,38 @@ Style/MethodDefParentheses:
   - require_parentheses
   - require_no_parentheses
   - require_no_parentheses_except_multiline
+
+Layout/FirstMethodArgumentLineBreak:
+  Description: Checks for a line break before the first argument in a multi-line method
+    call.
+
+Layout/MultilineMethodCallBraceLayout:
+  Description: Checks that the closing brace in a method call is either on the same
+    line as the last method argument, or a new line.
+  EnforcedStyle: symmetrical
+  SupportedStyles:
+  - symmetrical
+  - new_line
+  - same_line
+
+Layout/MultilineMethodDefinitionBraceLayout:
+  Description: Checks that the closing brace in a method definition is either on the
+    same line as the last method parameter, or a new line.
+  EnforcedStyle: symmetrical
+  SupportedStyles:
+  - symmetrical
+  - new_line
+  - same_line
+
+Layout/ClosingParenthesisIndentation:
+  Description: Checks the indentation of hanging closing parentheses.
+
+Style/BlockDelimiters:
+  Description: >-
+                Avoid using {...} for multi-line blocks (multiline chaining is
+                always ugly).
+                Prefer {...} over do...end for single-line blocks.
+  StyleGuide: '#single-line-blocks'
 
 Style/CommentAnnotation:
   Description: >-
