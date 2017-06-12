@@ -17,6 +17,15 @@ Layout/AlignHash:
                  Align the elements of a hash literal if they span more than
                  one line.
 
+Layout/AlignParameters:
+  Description: Align the parameters of a method call if they span more than one line.
+  StyleGuide: "#no-double-indent"
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+  - with_first_parameter
+  - with_fixed_indentation
+  IndentationWidth: 2
+
 Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
 

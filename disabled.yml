@@ -10,12 +10,6 @@ Style/Alias:
   Description: 'Use alias instead of alias_method.'
   StyleGuide: '#alias-method'
 
-Layout/AlignParameters:
-  Description: >-
-                 Align the parameters of a method call if they span more
-                 than one line.
-  StyleGuide: '#no-double-indent'
-
 Style/AndOr:
   Description: 'Use &&/|| instead of and/or.'
   StyleGuide: '#no-and-or-or'
