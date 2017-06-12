@@ -20,6 +20,10 @@ Layout/AlignHash:
 Layout/BlockEndNewline:
   Description: 'Put end statement of multiline block on its own line.'
 
+Style/DefWithParentheses:
+  Description: 'Use def with parentheses when there are arguments.'
+  StyleGuide: '#method-parens'
+
 Style/CommentAnnotation:
   Description: >-
                  Checks formatting of special comments

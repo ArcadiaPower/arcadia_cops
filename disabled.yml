@@ -101,10 +101,6 @@ Style/ConditionalAssignment:
                  assignment to a variable and variable comparison instead
                  of assigning that variable inside of each branch.
 
-Style/DefWithParentheses:
-  Description: 'Use def with parentheses when there are arguments.'
-  StyleGuide: '#method-parens'
-
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Exclude:
