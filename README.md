@@ -16,7 +16,7 @@ Then setup your `.rubocop.yml` file per [rubocop docs](http://rubocop.readthedoc
 
 Add a new cop to the `enabled.yml`, bump the version, and put in a PR for review.
 
-To see all cops including those that aren't enabled run `bundle exex rubocop --show-cops`.
+To see all cops including those that aren't enabled run `bundle exec rubocop --show-cops`.
 
 ## Release
 
