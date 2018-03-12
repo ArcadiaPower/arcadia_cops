@@ -169,6 +169,11 @@ Style/HashSyntax:
 Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
 
+Style/Lambda:
+  Description: 'Use the new lambda literal syntax for single-line blocks.'
+  StyleGuide: '#lambda-multi-line'
+  Enabled: true
+
 Style/MethodCallWithoutArgsParentheses:
   Description: 'Do not use parentheses for method calls with no arguments.'
   StyleGuide: '#method-invocation-parens'
