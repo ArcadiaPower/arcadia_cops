@@ -433,7 +433,7 @@ Lint/IneffectiveAccessModifier:
 Lint/InheritException:
   Description: 'Avoid inheriting from the `Exception` class.'
 
-Lint/LiteralInCondition:
+Lint/LiteralAsCondition:
   Description: 'Checks of literals used in conditions.'
 
 Lint/LiteralInInterpolation:
@@ -505,7 +505,7 @@ Lint/UnderscorePrefixedVariableName:
 Lint/UnifiedInteger:
   Description: 'Use Integer instead of Fixnum or Bignum'
 
-Lint/UnneededDisable:
+Lint/UnneededCopDisableDirective:
   Description: >-
                  Checks for rubocop:disable comments that can be removed.
                  Note: this cop is not disabled when disabling all cops.
