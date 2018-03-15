@@ -80,14 +80,14 @@ Style/CommentAnnotation:
                  (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
   StyleGuide: '#annotate-keywords'
 
-Style/ClassAndModuleCamelCase:
+Naming/ClassAndModuleCamelCase:
   Description: 'Use CamelCase for classes and modules.'
   StyleGuide: '#camelcase-classes'
 
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
 
-Style/ConstantName:
+Naming/ConstantName:
   Description: 'Constants should use SCREAMING_SNAKE_CASE.'
   StyleGuide: '#screaming-snake-case'
 
@@ -106,8 +106,12 @@ Style/TrailingCommaInArguments:
   Description: 'Checks for trailing comma in argument lists.'
   StyleGuide: '#no-trailing-params-comma'
 
-Style/TrailingCommaInLiteral:
-  Description: 'Checks for trailing comma in array and hash literals.'
+Style/TrailingCommaInArguments:
+  Description: 'Checks for trailing comma in argument lists.'
+  StyleGuide: '#no-trailing-params-comma'
+
+Style/TrailingCommaInArrayLiteral:
+  Description: 'Checks for trailing comma in array literals.'
   StyleGuide: '#no-trailing-array-commas'
 
 Style/DoubleNegation:
@@ -153,7 +157,7 @@ Style/EmptyMethod:
   Description: 'Checks the formatting of empty method definitions.'
   StyleGuide: '#no-single-line-methods'
 
-Style/FileName:
+Naming/FileName:
   Description: 'Use snake_case for source file names.'
   StyleGuide: '#snake-case-files'
 
@@ -346,13 +350,13 @@ Lint/AssignmentInCondition:
   Description: "Don't use assignment in conditions."
   StyleGuide: '#safe-assignment-in-condition'
 
-Lint/BlockAlignment:
+Layout/BlockAlignment:
   Description: 'Align block ends correctly.'
 
 Lint/CircularArgumentReference:
   Description: "Default values in optional keyword arguments and optional ordinal arguments should not refer back to the name of the argument."
 
-Lint/ConditionPosition:
+Layout/ConditionPosition:
   Description: >-
                  Checks for condition placed in a confusing position relative to
                  the keyword.
@@ -361,7 +365,7 @@ Lint/ConditionPosition:
 Lint/Debugger:
   Description: 'Check for debugger calls.'
 
-Lint/DefEndAlignment:
+Layout/DefEndAlignment:
   Description: 'Align ends corresponding to defs correctly.'
 
 Lint/DeprecatedClassMethods:
@@ -394,7 +398,7 @@ Lint/EmptyInterpolation:
 Lint/EmptyWhen:
   Description: 'Checks for `when` branches with empty bodies.'
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   Description: 'Align ends correctly.'
 
 Lint/EndInMethod:
@@ -428,11 +432,6 @@ Lint/IneffectiveAccessModifier:
 
 Lint/InheritException:
   Description: 'Avoid inheriting from the `Exception` class.'
-
-Lint/InvalidCharacterLiteral:
-  Description: >-
-                 Checks for invalid character literals with a non-escaped
-                 whitespace character.
 
 Lint/LiteralInCondition:
   Description: 'Checks of literals used in conditions.'
