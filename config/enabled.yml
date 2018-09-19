@@ -552,3 +552,24 @@ Lint/UselessSetterCall:
 
 Lint/Void:
   Description: 'Possible use of operator/literal/variable in void context.'
+
+Layout/CommentIndentation:
+  Description: Indentation of comments.
+
+Layout/EmptyLinesAroundArguments:
+  Description: Keeps track of empty lines around method arguments.
+
+Layout/EmptyLinesAroundBeginBody:
+  Description: Keeps track of empty lines around begin-end bodies.
+  StyleGuide: "#empty-lines-around-bodies"
+
+Layout/FirstHashElementLineBreak:
+  Description: Checks for a line break before the first element in a multi-line hash.
+
+Layout/FirstArrayElementLineBreak:
+  Description: Checks for a line break before the first element in a multi-line array.
+
+Layout/IndentationConsistency:
+  Description: Keep indentation straight.
+  StyleGuide: "#spaces-indentation"
+  EnforcedStyle: rails
