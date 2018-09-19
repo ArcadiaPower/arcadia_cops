@@ -573,3 +573,48 @@ Layout/IndentationConsistency:
   Description: Keep indentation straight.
   StyleGuide: "#spaces-indentation"
   EnforcedStyle: rails
+
+Lint/Syntax:
+  Description: Checks syntax error
+
+Lint/UnneededRequireStatement:
+  Description: Checks for unnecessary `require` statement.
+
+Naming/AsciiIdentifiers:
+  Description: Use only ascii symbols in identifiers.
+  StyleGuide: "#english-identifiers"
+
+Naming/ClassAndModuleCamelCase:
+  Description: Use CamelCase for classes and modules.
+  StyleGuide: "#camelcase-classes"
+
+Naming/MethodName:
+  Description: Use the configured style when naming methods.
+  StyleGuide: "#snake-case-symbols-methods-vars"
+  EnforcedStyle: snake_case
+
+Naming/VariableName:
+  Description: Use the configured style when naming variables.
+  StyleGuide: "#snake-case-symbols-methods-vars"
+  EnforcedStyle: snake_case
+
+Style/ArrayJoin:
+  Description: Use Array#join instead of Array#*.
+  StyleGuide: "#array-join"
+
+Style/BlockComments:
+  Description: Do not use block comments.
+  StyleGuide: "#no-block-comments"
+
+Style/OneLineConditional:
+  Description: Favor the ternary operator(?:) over if/then/else/end constructs.
+  StyleGuide: "#ternary-operator"
+
+Style/SymbolLiteral:
+  Description: Use plain symbols instead of string symbols when possible.
+
+Style/TrailingMethodEndStatement:
+  Description: Checks for trailing end statement on line of method body.
+
+Style/TrailingBodyOnModule:
+  Description: Module body goes below module statement.
