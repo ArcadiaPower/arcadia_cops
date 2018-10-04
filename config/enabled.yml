@@ -618,3 +618,56 @@ Style/TrailingMethodEndStatement:
 
 Style/TrailingBodyOnModule:
   Description: Module body goes below module statement.
+
+# RSpec
+
+FactoryBot/AttributeDefinedStatically:
+  Description: Always declare attribute values as blocks.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/AttributeDefinedStatically
+
+RSpec/AroundBlock:
+  Description: Checks that around blocks actually run the test.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AroundBlock
+
+RSpec/Be:
+  Description: Check for expectations where `be` is used without argument.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/Be
+
+RSpec/DescribeSymbol:
+  Description: Avoid describing symbols.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/DescribeSymbol
+
+RSpec/ExampleWithoutDescription:
+  Description: Checks for examples without a description.
+  EnforcedStyle: always_allow
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ExampleWithoutDescription
+
+RSpec/ImplicitExpect:
+  Description: Check that a consistent implicit expectation style is used.
+  EnforcedStyle: is_expected
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/ImplicitExpect
+
+RSpec/InvalidPredicateMatcher:
+  Description: Checks invalid usage for predicate matcher.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/InvalidPredicateMatcher
+
+RSpec/IteratedExpectation:
+  Description: Check that `all` matcher is used instead of iterating over an array.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/IteratedExpectation
+
+RSpec/MultipleDescribes:
+  Description: Checks for multiple top level describes.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleDescribes
+
+RSpec/MultipleSubjects:
+  Description: Checks if an example group defines `subject` multiple times.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/MultipleSubjects
+
+RSpec/RepeatedExample:
+  Description: Check for repeated examples within example groups.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/RepeatedExample
+
+RSpec/OverwritingSetup:
+  Description: Checks if there is a let/subject that overwrites an existing one.
+  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/OverwritingSetup
+
