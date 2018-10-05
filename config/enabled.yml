@@ -282,6 +282,7 @@ Rails/Output:
 
 Rails/SafeNavigation:
   Description: "Use Ruby's safe navigation operator (`&.`) instead of `try!`"
+  ConvertTry: true
 
 Rails/Date:
   Description: >-
