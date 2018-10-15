@@ -1,0 +1,5 @@
+Bundler/DuplicatedGem:
+  Description: 'Checks for duplicate gem entries in Gemfile.'
+  Include:
+    - '**/Gemfile'
+    - '**/gems.rb'

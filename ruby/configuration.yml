@@ -1,23 +1,16 @@
-# This is the default configuration file. Enabling and disabling is configured
-# in separate files. This file adds all other parameters apart from Enabled.
-
-require: rubocop-rspec
-
-# Common configuration.
 AllCops:
   # Include common Ruby source files.
   Include:
     - '**/*.rb'
     - '**/*.rake'
     - '**/*.gemspec'
-    - '**/*.rake'
-    - '**/config.ru'
     - '**/Gemfile'
     - '**/Rakefile'
     - '**/Guardfile'
   Exclude:
     - 'vendor/**/*'
-    - '**/schema.rb'
+    - 'bin/**/*'
+
   # Default formatter will be used if no -f/--format option is given.
   DefaultFormatter: progress
   # Cop names are not displayed in offense messages by default. Change behavior
@@ -30,7 +23,7 @@ AllCops:
   DisplayStyleGuide: true
   # When specifying style guide URLs, any paths and/or fragments will be
   # evaluated relative to the base URL.
-  StyleGuideBaseURL: https://github.com/bbatsov/ruby-style-guide
+  StyleGuideBaseURL: https://documentation.arcadiapower.com/Docs/style_guides/ruby.html
   # Extra details are not displayed in offense messages by default. Change
   # behavior by overriding ExtraDetails, or by giving the
   # -E/--extra-details option.
@@ -71,6 +64,3 @@ AllCops:
   # Else if .ruby-version exists and it contains an MRI version it is used.
   # Otherwise we fallback to the oldest officially supported Ruby version (2.1).
   TargetRubyVersion: 2.3
-
-Rails:
-  Enabled: false

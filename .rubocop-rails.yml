@@ -1,0 +1,4 @@
+inherit_gem:
+  arcadia_cops:
+    - rails/rubocop.yml
+    - rspec/rubocop.yml
