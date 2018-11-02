@@ -672,3 +672,10 @@ RSpec/OverwritingSetup:
   Description: Checks if there is a let/subject that overwrites an existing one.
   StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/OverwritingSetup
 
+Layout/SpaceInsideStringInterpolation:
+  Description: Checks for padding/surrounding spaces inside string interpolation.
+  EnforcedStyle: no_space
+
+Style/ReturnNil:
+  Description: Use return instead of return nil.
+  EnforcedStyle: return
