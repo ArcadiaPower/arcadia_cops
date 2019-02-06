@@ -679,3 +679,27 @@ Layout/SpaceInsideStringInterpolation:
 Style/ReturnNil:
   Description: Use return instead of return nil.
   EnforcedStyle: return
+
+Style/Dir:
+  Description: Use the `__dir__` method to retrieve the canonicalized absolute path
+    to the current file.
+  Enabled: true
+
+Style/ExpandPathArguments:
+  Description: Use `expand_path(__dir__)` instead of `expand_path('..', __FILE__)`.
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+Style/RedundantFreeze:
+  Enabled: true
+
+RSpec/ScatteredSetup:
+  Enabled: true
+
+RSpec/ScatteredLet:
+  Enabled: true
+
+RSpec/Focus:
+  Enabled: true
