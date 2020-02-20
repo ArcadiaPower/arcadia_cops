@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    arcadia_cops (3.5.1)
+    arcadia_cops (3.5.2)
       rubocop (= 0.63.1)
       rubocop-rspec (= 1.32)
 
