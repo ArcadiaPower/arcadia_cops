@@ -21,6 +21,8 @@ To see all cops including those that aren't enabled run `bundle exec rubocop --s
 ## Release
 
 Ensure you have bumped the version and run `rake release` to release to rubygems.org.
+If this command appears to be hanging, it's probably expecting an OTP code for authentication.
+Updating rubygems (`gem update --system`) and bundler (`bundle update --bundler`) seem to fix this.
 
 ## Other
 
