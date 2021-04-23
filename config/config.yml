@@ -1,7 +1,9 @@
 # This is the default configuration file. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
 
-require: rubocop-rspec
+require:
+  - rubocop-rails
+  - rubocop-rspec
 
 # Common configuration.
 AllCops:
@@ -71,6 +73,3 @@ AllCops:
   # Else if .ruby-version exists and it contains an MRI version it is used.
   # Otherwise we fallback to the oldest officially supported Ruby version (2.1).
   # TargetRubyVersion: 2.5 # SPECIFY IN PROJECT .ruby-version file
-
-Rails:
-  Enabled: false
