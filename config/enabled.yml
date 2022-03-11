@@ -680,3 +680,13 @@ RSpec/ScatteredLet:
 
 RSpec/Focus:
   Enabled: true
+
+Style/AndOr:
+  Enabled: true
+  EnforcedStyle: always
+
+Style/Not:
+  Enabled: true
+
+Style/NegatedUnless:
+  Enabled: true
