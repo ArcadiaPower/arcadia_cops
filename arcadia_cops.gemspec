@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/ArcadiaPower/arcadia_cops/'
   s.license = 'MIT'
 
-  s.add_dependency 'rubocop', '~> 1.26'
+  s.add_dependency 'rubocop', '~> 1.29.1'
   s.add_dependency 'rubocop-rails', '~> 2.9'
   s.add_dependency 'rubocop-rspec', '~> 2.2'
 
