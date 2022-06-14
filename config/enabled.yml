@@ -687,3 +687,9 @@ Style/Not:
 
 Style/NegatedUnless:
   Enabled: true
+
+ArcadiaCops/SimpleModifierConditional:
+  Enabled: true
+
+ArcadiaCops/SimpleUnless:
+  Enabled: true

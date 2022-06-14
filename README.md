@@ -18,6 +18,8 @@ Add a new cop to the `enabled.yml`, bump the version, and put in a PR for review
 
 To see all cops including those that aren't enabled run `bundle exec rubocop --show-cops`.
 
+WHen developing custom cops, make sure to add specs and run run `bundle exec rspec` before releasing.
+
 ## Release
 
 Ensure you have bumped the version and run `rake release` to release to rubygems.org.
