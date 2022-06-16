@@ -4,6 +4,7 @@
 require:
   - rubocop-rails
   - rubocop-rspec
+  - ../lib/arcadia_cops.rb
 
 # Common configuration.
 AllCops:
