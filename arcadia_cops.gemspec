@@ -2,7 +2,7 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'arcadia_cops'
-  s.version = '4.0.4'
+  s.version = '5.0.0'
   s.summary = 'Arcadia Style Cops'
   s.description = 'Contains enabled rubocops for Arcadia ruby repos.'
   s.authors = %w(engineering)

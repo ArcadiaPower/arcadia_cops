@@ -598,12 +598,12 @@ Style/TrailingMethodEndStatement:
 Style/TrailingBodyOnModule:
   Description: Module body goes below module statement.
 
-# RSpec
-
-RSpec/FactoryBot/AttributeDefinedStatically:
+# FactoryBot
+FactoryBot/AttributeDefinedStatically:
   Description: Always declare attribute values as blocks.
-  StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/FactoryBot/AttributeDefinedStatically
+  StyleGuide: https://www.rubydoc.info/gems/rubocop-factory_bot/RuboCop/Cop/FactoryBot/AttributeDefinedStatically
 
+# RSpec
 RSpec/AroundBlock:
   Description: Checks that around blocks actually run the test.
   StyleGuide: http://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/RSpec/AroundBlock
