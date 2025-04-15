@@ -1,8 +1,10 @@
 # This is the default configuration file. Enabling and disabling is configured
 # in separate files. This file adds all other parameters apart from Enabled.
 
-require:
+plugins:
   - rubocop-rails
+
+require:
   - rubocop-rspec
   - ../lib/arcadia_cops.rb
 
